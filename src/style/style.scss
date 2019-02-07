@@ -1,5 +1,13 @@
 @import './_normalize.scss';
+@import './_variables.scss';
 
-.main {
-  background: red;
+.header {
+  display: flex;
+  background: $blue-grey1;
+
+  &__menu-btn {
+    .menu-icon {
+      height: 20px;
+    }
+  }
 }

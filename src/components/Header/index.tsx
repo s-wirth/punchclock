@@ -27,7 +27,7 @@ class Header extends React.PureComponent<Props> {
         </div>
         <div className="header__menu">
           <div
-            className="header__menu-icon"
+            className="header__menu-btn"
             onClick={() => { }}>
             <img src={menuSVG} alt="menu-icon" />
           </div>
