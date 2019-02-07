@@ -1,18 +1,19 @@
-@import './_normalize.scss';
-@import './_variables.scss';
+@import 'normalize';
+@import 'generics';
+@import 'variables';
 
 .header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: white;
 
   &__lm-wrapper {
+    color: white;
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background: $blue-grey1;
+    background: $dark-blue-grey;
   }
 
   &__logo {
@@ -56,20 +57,26 @@
     width: 100px;
     padding-bottom: 5px;
 
-    &:hover {
-      border-bottom: 2px solid #efefef;
-    }
     &:not(:last-child) {
       margin-right: 30px;
     }
 
     &.active {
-      border-bottom: 2px solid #ee8738;
+      border-bottom: 2px solid $cta-crimson;
     }
 
     &:last-child {
       color: #efefef;
       cursor: not-allowed;
     }
+  }
+}
+
+.logger {
+  &__header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: $lightest-grey;
   }
 }
