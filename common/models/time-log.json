@@ -1,0 +1,25 @@
+{
+  "name": "TimeLog",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "starttime": {
+      "type": "date",
+      "required": true
+    },
+    "endtime": {
+      "type": "date"
+    },
+    "userid": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
