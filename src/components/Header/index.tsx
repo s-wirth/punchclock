@@ -20,20 +20,22 @@ class Header extends React.PureComponent<Props> {
   render() {
     return (
       <div className="header">
-        <div className="header__logo">PunchClock</div>
+        <div className="header__lm-wrapper">
+          <div className="header__logo">PunchClock</div>
+          <div className="header__menu">
+            <div
+              className="header__menu-btn"
+              onClick={() => { }}>
+              <img src={menuSVG} alt="menu-icon" />
+            </div>
+            <ul className={`header__menu-items ${false ? 'active' : ''}`}>
+              <li className="menu-item">Logout</li>
+            </ul>
+          </div>
+        </div>
         <div className="header__navigation">
           <span className={`header__navigation-item ${this.props.views.activeView === Views.Logger ? 'active' : ''}`}>Logger</span>
           <span className={`header__navigation-item disabled`}>Dashboard</span>
-        </div>
-        <div className="header__menu">
-          <div
-            className="header__menu-btn"
-            onClick={() => { }}>
-            <img src={menuSVG} alt="menu-icon" />
-          </div>
-          <ul className="header__menu-items">
-            <li className="menu-item">Logout</li>
-          </ul>
         </div>
       </div>
     );
