@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack && cp src/index.html dist/index.html",
+    "start": "webpack-dev-server --open --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "typescript": "^3.3.1",
     "url-loader": "^1.1.2",
     "webpack": "^4.29.3",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   }
 }
