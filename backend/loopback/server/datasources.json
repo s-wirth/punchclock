@@ -3,14 +3,14 @@
     "name": "db",
     "connector": "memory"
   },
-  "postgresDS": {
+  "postgres": {
     "host": "localhost",
-    "port": 4000,
-    "url": "",
+    "port": "5432",
     "database": "punchclock",
+    "username": "pcuser",
     "password": "password",
-    "name": "postgresDS",
-    "user": "pc_user",
+    "name": "postgres",
+    "debug": true,
     "connector": "postgresql"
   }
 }
